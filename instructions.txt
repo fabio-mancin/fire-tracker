@@ -1,0 +1,5 @@
+In più, selezionando una singola giornata tra 21 e il 28 agosto, 
+la mappa mostrerà solo i pin (gli incendi) di quella data. 
+Permettere all’utente di selezionare non il singolo giorno, 
+ma un intero periodo di due o più giorni - o l’intera settimana.
+https://github.com/bliblidotcom/vue-rangedate-picker
