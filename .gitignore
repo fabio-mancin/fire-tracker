@@ -9,6 +9,8 @@ node_modules
 # Configurations
 *.config.js
 .eslintrc.js
+.editorconfig
+.browserslistrc
 
 # Log files
 npm-debug.log*
