@@ -3,7 +3,7 @@
     <h1>
       <span v-for="(letter, index) in title" :key="index" class="letter">{{ letter }}</span>
     </h1>
-    <h2> Currently showing {{ message }} fires.</h2>
+    <h2>{{ message }}</h2>
     <h3> App by Fabio. Take a look at my
       <a href="https://github.com/fabio-mancin/" title="GitHub Link"> GitHub </a> or my
       <a href="https://fabiomancin.dev" title="Personal Website"> website!</a>
