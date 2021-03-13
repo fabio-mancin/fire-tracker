@@ -1,0 +1,48 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  color: orange;
+  font-family: 'Raleway', sans-serif;
+  font-size: 5vw;
+  font-weight: 800;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: orangered;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vw;
+  font-weight: 800;
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2vw;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    color: orangered;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  color: blue;
+
+  &:hover {
+    text-decoration: underline;
+    color: orange;
+  }
+}

@@ -13,7 +13,7 @@
 </template>
 
 <script>
-// import '@/assets/styles/DatePicker.scss'
+import '@/assets/styles/ShowMessage.scss'
 export default {
   name: 'ShowMessage',
   props: ['message', 'title']
