@@ -2,10 +2,13 @@
 node_modules
 /dist
 
-
 # local env files
 .env.local
 .env.*.local
+.eslintrc.js
+babel.config.js
+vue.config.js
+webpack.config.js
 
 # Log files
 npm-debug.log*
