@@ -1,3 +1,29 @@
-div {
+.datepicker-container {
+  width: 200px;
+  margin: auto;
   text-align: center;
+  input {
+    text-align: center;
+    &:hover {
+      background: orangered;
+      font-weight: bold;
+    }
+  }
+  label {
+    margin: auto;
+  }
+  .from-container, .to-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em auto;
+  }
+  button {
+    margin: 0.5em auto;
+    width: 50px;
+    &:hover {
+      background: orangered;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
 }

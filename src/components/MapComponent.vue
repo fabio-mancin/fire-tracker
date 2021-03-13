@@ -15,16 +15,17 @@
       <l-marker v-for="(fire, index) in firesData"
         v-bind:key="index"
         :lat-lng='[fire.latitude, fire.longitude]'>
+        <l-tooltip>{{ fire.date }}</l-tooltip>
       </l-marker>
     </l-map>
   </div>
 </template>
 
 <script>
-import { latLng, Icon } from 'leaflet'
-import { LMap, LTileLayer, LMarker/* ,  LTooltip */ } from 'vue2-leaflet'
+import { Icon } from 'leaflet'
+import { LMap, LTileLayer, LMarker, LTooltip } from 'vue2-leaflet'
 import '@/assets/styles/MapComponent.scss'
-
+// https://vue2-leaflet.netlify.app/quickstart/#marker-icons-are-missing
 delete Icon.Default.prototype._getIconUrl
 Icon.Default.mergeOptions({
   iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
@@ -37,19 +38,19 @@ export default {
   components: {
     LMap,
     LTileLayer,
-    LMarker
+    LMarker,
+    LTooltip
   },
   props: ['firesData'],
   data () {
     return {
       zoom: 1.2,
-      center: latLng(45.4408, 12.3155),
+      center: [45.4408, 12.3155],
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       attribution:
-        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors', // https://www.openstreetmap.org/copyright
       currentZoom: 1.2,
-      currentCenter: latLng(45.4408, 12.3155),
-      showParagraph: false,
+      currentCenter: [45.4408, 12.3155],
       mapOptions: {
         zoomSnap: 0.5
       }
